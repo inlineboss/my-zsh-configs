@@ -70,7 +70,10 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+   git
+   zsh-syntax-highlighting
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -99,8 +102,20 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
+alias n="nvim"
 alias ll="ls -la"
-alias n="vi"
-alias zshld="source ~/.zshrc"
-alias zshrc="n ~/.zshrc"
+alias zrc="n ~/.zshrc"
+alias zld="source ~/.zshrc"
+alias zsc="n ~/zsh/scripts.zsh"
+alias zscs="n ~/zsh/scripts"
+
+alias rspi="ssh pi@192.168.1.71"
+alias pqhost="ssh root@146.19.80.168" # password: 
+alias psqlstart="postgres -D /usr/local/var/postgres"
+
+alias zscs="n ~/zsh/scripts"
+
+
+source ~/zsh/scripts.zsh
+
+[ -f "/Users/inlineboss/.ghcup/env" ] && source "/Users/inlineboss/.ghcup/env" # ghcup-env
