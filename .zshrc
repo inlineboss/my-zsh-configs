@@ -74,7 +74,10 @@ plugins=(
    git
    zsh-syntax-highlighting
    zsh-autosuggestions
+   docker docker-compose
+   autojump 
 )
+[ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh # autojump
 
 source $ZSH/oh-my-zsh.sh
 
